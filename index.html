@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ArtDukiria Creaciones</title>
-  <!-- AHORA: logo en la misma carpeta que index.html -->
   <link rel="icon" href="foto11.jpg" type="image/jpeg" />
   <link rel="stylesheet" href="styles.css" />
   <meta name="description" content="ArtDukiria Creaciones - productos artesanales en trapillo, materas, canastos, mandalas, posaplatos y souvenires hechos a mano. Envíos desde Artigas a todo el Uruguay." />
@@ -14,7 +13,6 @@
   <header class="header">
     <div class="container header-inner">
       <a href="#inicio" class="logo">
-        <!-- AHORA: logo sin carpeta img/ -->
         <img src="foto11.jpg" alt="Logo ArtDukiria Creaciones" />
       </a>
       <nav class="nav">
@@ -306,7 +304,6 @@
 
         <div class="souvenirs-layout">
           <div class="souvenirs-image">
-            <!-- Carrusel pequeño de imágenes de souvenires -->
             <div class="carousel carousel-images" data-carousel="souvenirs">
               <button class="carousel-btn prev" type="button">‹</button>
               <div class="carousel-track">
@@ -362,24 +359,32 @@
         </div>
 
         <div class="about-image">
-          <!-- Carrusel de videos del espacio de trabajo / creación -->
+          <!-- Carrusel simplificado de videos -->
           <div class="carousel carousel-video" data-carousel="videos">
             <button class="carousel-btn prev" type="button">‹</button>
             <div class="carousel-track">
               <div class="carousel-item active">
-                <video src="video1.mp4" controls playsinline></video>
+                <video src="video1.mp4" type="video/mp4" controls playsinline></video>
               </div>
               <div class="carousel-item">
-                <video src="video2.mp4" controls playsinline></video>
+                <video src="video2.mp4" type="video/mp4" controls playsinline></video>
               </div>
               <div class="carousel-item">
-                <video src="video3.mp4" controls playsinline></video>
+                <video src="video3.mp4" type="video/mp4" controls playsinline></video>
               </div>
               <div class="carousel-item">
-                <video src="video4.mp4" controls playsinline></video>
+                <video src="video4.mp4" type="video/mp4" controls playsinline></video>
               </div>
             </div>
             <button class="carousel-btn next" type="button">›</button>
+          </div>
+
+          <!-- VIDEO DE PRUEBA, FUERA DEL CARRUSEL -->
+          <div style="margin-top: 1rem;">
+            <p style="font-size:0.85rem; color:#707070; margin-bottom:0.4rem;">
+              Video de prueba (fuera del carrusel):
+            </p>
+            <video src="video1.mp4" type="video/mp4" controls style="width:100%; max-width:360px; border-radius:16px; border:1px solid #f4c8dd;"></video>
           </div>
         </div>
       </div>
@@ -402,7 +407,6 @@
         </div>
 
         <div class="contact-form-wrapper">
-          <!-- Formulario que envía correo a Gmail -->
           <form
             class="contact-form"
             autocomplete="off"
@@ -453,4 +457,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
