@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtDukiria Creaciones</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="img/foto11.jpg" type="image/jpeg" />
+  <meta name="description" content="ArtDukiria Creaciones - productos artesanales en trapillo, materas, canastos, mandalas, posaplatos y souvenires hechos a mano. Envíos desde Artigas a todo el Uruguay." />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">
+        <img src="img/foto11.jpg" alt="Logo ArtDukiria Creaciones" />
+      </a>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#souvenirs">Souvenirs y personalizados</a>
+        <a href="#carrito">Carrito</a>
+        <a href="#sobre">Sobre la marca</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / INICIO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Creaciones artesanales en trapillo para llenar tus espacios de calidez.</h1>
+          <p>
+            Piezas únicas hechas a mano: materas, canastos, mandalas, posaplatos y souvenires.
+            Desde Artigas, Uruguay, con envíos a todo el país.
+          </p>
+          <div class="hero-actions">
+            <a href="#productos" class="btn btn-primary">Ver catálogo de productos</a>
+            <a href="#souvenirs" class="btn btn-outline">Pedidos personalizados</a>
+          </div>
+        </div>
+
+        <!-- Carrusel de imágenes en la portada -->
+        <div class="hero-image">
+          <div class="hero-placeholder">
+            <div class="carousel hero-carousel" data-carousel="hero">
+              <div class="carousel-track">
+                <div class="carousel-item active">
+                  <img src="img/foto1.jpg" alt="Producto artesanal 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto2.jpg" alt="Producto artesanal 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto3.jpg" alt="Producto artesanal 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto4.jpg" alt="Producto artesanal 4" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto5.jpg" alt="Producto artesanal 5" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto6.jpg" alt="Producto artesanal 6" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto7.jpg" alt="Producto artesanal 7" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto8.jpg" alt="Producto artesanal 8" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto9.jpg" alt="Producto artesanal 9" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto10.jpg" alt="Producto artesanal 10" />
+                </div>
+                <!-- Omitimos foto11 porque es el logo -->
+                <div class="carousel-item">
+                  <img src="img/foto12.jpg" alt="Producto artesanal 12" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto13.jpg" alt="Producto artesanal 13" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto14.jpg" alt="Producto artesanal 14" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="section section-products">
+      <div class="container">
+        <h2>Productos</h2>
+        <p class="section-subtitle">
+          Cada pieza es tejida a mano con trapillo, cuidando los detalles para que tengas
+          un producto único y especial.
+        </p>
+
+        <div class="product-grid">
+          <!-- 1. Matera modelo A -->
+          <article class="product-card">
+            <img src="img/foto1.jpg" alt="Matera modelo A" />
+            <div class="product-info">
+              <h3>Matera modelo A</h3>
+              <p class="product-price">$1200</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Matera modelo A"
+                data-product-price="$1200"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- 2. Matera modelo B -->
+          <article class="product-card">
+            <img src="img/foto10.jpg" alt="Matera modelo B" />
+            <div class="product-info">
+              <h3>Matera modelo B</h3>
+              <p class="product-price">$1200</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Matera modelo B"
+                data-product-price="$1200"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- 3. Set de Matera y posa mates -->
+          <article class="product-card">
+            <img src="img/foto2.jpg" alt="Set de matera y posa mates" />
+            <div class="product-info">
+              <h3>Set de matera y posa mates</h3>
+              <p class="product-price">$1500</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Set de matera y posa mates"
+                data-product-price="$1500"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- 4. Conjunto de canastos -->
+          <article class="product-card">
+            <img src="img/foto3.jpg" alt="Conjunto de canastos" />
+            <div class="product-info">
+              <h3>Conjunto de canastos</h3>
+              <p class="product-price">$1900</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Conjunto de canastos"
+                data-product-price="$1900"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- 5. Canasto individual -->
+          <article class="product-card">
+            <img src="img/foto4.jpg" alt="Canasto individual" />
+            <div class="product-info">
+              <h3>Canasto individual</h3>
+              <p class="product-price">Desde $500 (según colores y tamaño)</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Canasto individual"
+                data-product-price="desde $500 (según colores y tamaño)"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- 6. Recuerditos -->
+          <article class="product-card">
+            <img src="img/foto5.jpg" alt="Recuerditos en trapillo" />
+            <div class="product-info">
+              <h3>Recuerditos</h3>
+              <p class="product-price">Precio según cantidad y modelo</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Recuerditos"
+                data-product-price="precio según cantidad y modelo"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- 7. Jaboneras con jabón natura -->
+          <article class="product-card">
+            <img src="img/foto6.jpg" alt="Jaboneras con jabón natura" />
+            <div class="product-info">
+              <h3>Jaboneras con jabón natura</h3>
+              <p class="product-price">$250</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Jaboneras con jabón natura"
+                data-product-price="$250"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- 8. Posaplatos (juego de 6) -->
+          <article class="product-card">
+            <img src="img/foto7.jpg" alt="Posaplatos juego de 6 unidades" />
+            <div class="product-info">
+              <h3>Posaplatos (juego de 6)</h3>
+              <p class="product-price">$1500</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Posaplatos (juego de 6)"
+                data-product-price="$1500"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- 9. Mandala tamaño grande -->
+          <article class="product-card">
+            <img src="img/foto8.jpg" alt="Mandala tamaño grande" />
+            <div class="product-info">
+              <h3>Mandala tamaño grande</h3>
+              <p class="product-price">$1000</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Mandala tamaño grande"
+                data-product-price="$1000"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- 10. Mandala tamaño menor -->
+          <article class="product-card">
+            <img src="img/foto9.jpg" alt="Mandala tamaño menor" />
+            <div class="product-info">
+              <h3>Mandala tamaño menor</h3>
+              <p class="product-price">$900</p>
+              <button
+                class="btn btn-secondary add-to-cart-button"
+                data-product-name="Mandala tamaño menor"
+                data-product-price="$900"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARRITO -->
+    <section id="carrito" class="section section-cart">
+      <div class="container">
+        <h2>Carrito de pedido</h2>
+        <p class="section-subtitle">
+          Agregá productos al carrito y, cuando estés listo, enviá tu pedido completo por WhatsApp.
+        </p>
+
+        <div id="cart-empty" class="cart-empty">
+          Tu carrito está vacío. Agregá productos desde el catálogo.
+        </div>
+
+        <ul id="cart-list" class="cart-list hidden"></ul>
+
+        <div class="cart-actions">
+          <button id="cart-clear-button" class="btn btn-outline" disabled>
+            Vaciar carrito
+          </button>
+          <button id="cart-whatsapp-button" class="btn btn-primary" disabled>
+            Enviar pedido por WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOUVENIRS Y PERSONALIZADOS -->
+    <section id="souvenirs" class="section section-soft">
+      <div class="container">
+        <h2>Souvenirs y pedidos personalizados</h2>
+        <p class="section-subtitle">
+          Diseñamos recuerditos y sets especiales para cumpleaños, baby showers, eventos
+          y regalos únicos. Podés elegir colores, modelos y cantidades para que se adapten
+          a tu celebración.
+        </p>
+
+        <div class="souvenirs-layout">
+          <div class="souvenirs-image">
+            <!-- Carrusel pequeño de imágenes de souvenires -->
+            <div class="carousel carousel-images" data-carousel="souvenirs">
+              <button class="carousel-btn prev" type="button">‹</button>
+              <div class="carousel-track">
+                <div class="carousel-item active">
+                  <img src="img/foto12.jpg" alt="Souvenir 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto13.jpg" alt="Souvenir 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto14.jpg" alt="Souvenir 3" />
+                </div>
+              </div>
+              <button class="carousel-btn next" type="button">›</button>
+            </div>
+          </div>
+
+          <div class="souvenirs-text">
+            <p>
+              Cada pedido se trabaja de forma personalizada, combinando trapillo, detalles
+              decorativos y terminaciones cuidadas. Si tenés una idea en mente, podemos
+              pensarla juntos y crear algo único para vos.
+            </p>
+            <p>
+              Contanos qué tipo de evento estás organizando, cuántos recuerditos necesitás
+              y qué colores te gustaría usar, y te enviamos propuestas y opciones.
+            </p>
+            <a href="#contacto" class="btn btn-primary">Quiero un pedido personalizado</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE LA MARCA -->
+    <section id="sobre" class="section">
+      <div class="container about-layout">
+        <div class="about-text">
+          <h2>Sobre ArtDukiria Creaciones</h2>
+          <p>
+            ArtDukiria Creaciones nace del amor por lo artesanal y la calidez del tejido
+            en trapillo. Cada pieza es elaborada a mano, con tiempo y dedicación, buscando
+            que cada detalle aporte armonía y belleza a tus espacios cotidianos.
+          </p>
+          <p>
+            Trabajamos desde la ciudad de Artigas, Uruguay, y realizamos envíos a todo el
+            país. Materas, canastos, mandalas, posaplatos y recuerditos: cada producto es
+            único, pensado para acompañarte día a día o para regalar a alguien especial.
+          </p>
+          <p>
+            Si querés ver más del proceso de creación o nuevas piezas, podés seguirnos en
+            Instagram y escribirnos por WhatsApp para coordinar tu próximo pedido.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <!-- Carrusel de videos del espacio de trabajo / creación -->
+          <div class="carousel carousel-video" data-carousel="videos">
+            <button class="carousel-btn prev" type="button">‹</button>
+            <div class="carousel-track">
+              <div class="carousel-item active">
+                <video src="video1.mp4" controls playsinline></video>
+              </div>
+              <div class="carousel-item">
+                <video src="video2.mp4" controls playsinline></video>
+              </div>
+              <div class="carousel-item">
+                <video src="video3.mp4" controls playsinline></video>
+              </div>
+              <div class="carousel-item">
+                <video src="video4.mp4" controls playsinline></video>
+              </div>
+            </div>
+            <button class="carousel-btn next" type="button">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section-contact">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <h2>Contacto</h2>
+          <p>
+            ¿Querés hacer un pedido, encargar souvenires personalizados o consultar por
+            un producto? Escribinos y coordinamos juntos los detalles.
+          </p>
+          <ul class="contact-list">
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/59892610829" target="_blank" rel="noopener">+598 92 610 829</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/artdukiria_creaciones" target="_blank" rel="noopener">@artdukiria_creaciones</a></li>
+            <li><strong>Envíos:</strong> desde Artigas a todo el país</li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <!-- Formulario que envía correo a Gmail -->
+          <form
+            class="contact-form"
+            autocomplete="off"
+            action="mailto:paulafrancia08@gmail.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <h3>Enviá tu consulta</h3>
+            <label>
+              Nombre
+              <input type="text" name="Nombre" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              Correo electrónico
+              <input type="email" name="Correo" placeholder="tucorreo@ejemplo.com" required />
+            </label>
+            <label>
+              Mensaje
+              <textarea
+                name="Mensaje"
+                rows="4"
+                placeholder="Contanos qué estás buscando, cantidades, colores, evento, etc."
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <p class="form-note">
+              Este formulario abre tu cliente de correo con el mensaje listo para enviar a
+              <strong>paulafrancia08@gmail.com</strong>. También podés escribirnos directamente por WhatsApp o Instagram.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>ArtDukiria Creaciones – Envíos desde Artigas a todo el Uruguay.</p>
+      <p class="footer-credit">
+        Desarrollado por
+        <a href="https://erdevs.com" target="_blank" rel="noopener">ER|devs – Desarrollo Web</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
