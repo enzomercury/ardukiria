@@ -36,14 +36,6 @@ body {
   background-color: var(--color-bg);
 }
 
-/* Utilitarios */
-.container {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
 img {
   max-width: 100%;
   display: block;
@@ -62,6 +54,13 @@ h3 {
 
 .hidden {
   display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 /* ===========================
@@ -174,7 +173,10 @@ h3 {
   padding: 0.5rem;
 }
 
-/* Botones genéricos */
+/* ===========================
+   Botones
+   =========================== */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -225,7 +227,7 @@ h3 {
 }
 
 /* ===========================
-   Carruseles
+   Carruseles (genérico)
    =========================== */
 
 .carousel {
@@ -251,8 +253,7 @@ h3 {
   position: relative;
 }
 
-.carousel-item img,
-.carousel-item video {
+.carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -261,21 +262,13 @@ h3 {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
 }
 
-/* 🔹 Ajuste solo para los iframes de YouTube (videos más grandes) */
-.carousel-item iframe {
-  width: 100%;
-  height: 280px; /* agrandado respecto a antes */
-  border-radius: 24px;
-  border: 1px solid #f4c8dd;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+/* Carrusel hero: sin borde/sombra extra */
+.hero-placeholder .carousel-item img {
+  border: none;
+  box-shadow: none;
 }
 
-@media (min-width: 900px) {
-  .carousel-item iframe {
-    height: 340px; /* un poco más grande en escritorio */
-  }
-}
-
+/* Botones de carrusel */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -302,10 +295,40 @@ h3 {
   right: 8px;
 }
 
-/* Ajustes para hero: sin borde/sombra extra en las imágenes internas */
-.hero-placeholder .carousel-item img {
-  border: none;
-  box-shadow: none;
+/* ===========================
+   Carrusel de videos (YouTube Shorts)
+   =========================== */
+
+.carousel-video {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.carousel-video .carousel-track {
+  min-height: 500px;
+}
+
+.carousel-video .carousel-item iframe {
+  width: 100%;
+  height: 500px;
+  aspect-ratio: 9 / 16;
+  border-radius: 24px;
+  border: 1px solid #f4c8dd;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+}
+
+@media (min-width: 900px) {
+  .carousel-video {
+    max-width: 420px;
+  }
+
+  .carousel-video .carousel-track {
+    min-height: 600px;
+  }
+
+  .carousel-video .carousel-item iframe {
+    height: 600px;
+  }
 }
 
 /* ===========================
@@ -625,7 +648,7 @@ h3 {
   }
 
   .nav {
-    display: none; /* menú hamburguesa futuro */
+    display: none; /* futuro menú hamburguesa */
   }
 
   .hero {
